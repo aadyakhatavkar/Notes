@@ -12,11 +12,11 @@
 #      +----[SHA256]-----+
 # Render the RMarkdown to HTML
           
-rmarkdown::render("Micro1.Rmd", output_format = "html_document")
+rmarkdown::render("Micro.Rmd", output_format = "html_document")
 
 # Git automation
 # Only add the Rmd and HTML (not every file in the folder)
-system("git add Micro1.Rmd Micro1.html")
+system("git add Micro.Rmd Micro.html")
 
 # Ask for a commit message
 msg <- readline("Commit message: ")
