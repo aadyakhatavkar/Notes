@@ -1,0 +1,54 @@
+---
+title: "Microeconomics Notes"
+author: "Aadya"
+date: "2025-09-27"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Chapter 1: Consumer Theory
+
+## Utility Functions
+Utility represents preferences. Example:
+
+$$
+U(x_1, x_2) = x_1^{0.5} \cdot x_2^{0.5}
+$$
+
+where $x_1$ and $x_2$ are quantities of goods.
+
+## Budget Constraint
+The budget line is:
+
+$$
+p_1 x_1 + p_2 x_2 \leq M
+$$
+
+where $M$ is income.
+
+```{r}
+# Example: Plot a budget line in R
+p1 <- 2; p2 <- 1; M <- 10
+x1 <- seq(0, M/p1, 0.1)
+x2 <- (M - p1*x1)/p2
+
+plot(x1, x2, type="l", col="blue", lwd=2,
+     xlab="Good 1", ylab="Good 2",
+     main="Budget Line")
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
