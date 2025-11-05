@@ -1,0 +1,3 @@
+[submodule "EoFE_DCG_Springer"]
+	path = EoFE_DCG_Springer
+	url = https://github.com/DoCoGu/EoFE_DCG_Springer.git
